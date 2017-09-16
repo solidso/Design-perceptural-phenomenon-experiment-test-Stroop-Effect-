@@ -31,9 +31,20 @@ The independent variable is the congruency condition and incongruency condition 
 
 **Answer:**
 
-The hypothesis that can use is: the difference between the time used to identify the colors under congruent words condition and incongruent words condition, namely, the Stroop Effect is in existence.
+The hypothesis test that can use is: the difference between the time used to identify the colors under congruent words condition and incongruent words condition, namely, the Stroop Effect is in existence.
 
-To be more specifically, here I will refer to the population means of congruence words group and incongruence words group - average times for the respective groups to recognize the colors. By comparing the mean time of two groups, we can find that there the difference exists between the two groups' recognization color time. But the fact is we are not able to collect all the data about time reaction of stroop effect, or do the experiment with all potential subjects in the world
+To be more specifically, here I will refer to the population means of congruence words group and incongruence words group - average times for the respective groups to recognize the colors. By comparing the mean time of two groups, we can find that there the difference exists between the two groups' recognization color time. But the fact is we are not able to collect all the data about time reaction of stroop effect, or do the experiment with all potential subjects in the world. 
+Base on this condition, we need to work with the sample we have to make inferential statistic about the population means, for example, to use the observation means, standard deviation and other statistics to infer about the population means. In this case, the observation is the difference between the two groups’ reaction times. With this observation, we can construct new statistics such as means and standard errors.
+
+To achieve this, We will use T-test to verify. T-test assesses whether the means of two groups are statistically different from each other. First of all, we need to address the uncertainty in sample standard error resulted from the unknown population standard deviation; two, we are comparing the means of two groups that are dependent; three, the same subject is involved under both conditions.
+
+Below is the hypothesis to test:
+
+H0: mu_diff = 0 (The real difference between group population means is zero)
+
+HA: mu_diff != 0 (The real difference between group population means is not zero)
+
+
 
 **3. Report some descriptive statistics regarding this dataset. Include at least one measure of central tendency and at least one measure of variability.**
 
@@ -61,7 +72,13 @@ library(ggplot2)
 b <- ggplot(tidy.dat, aes(y = time, x = congruency, fill = congruency))
 b + geom_boxplot(alpha=0.3)
 ```
+```{r}
+h <- ggplot(tidy.dat, aes(x = time, fill = congruency))
+h + geom_histogram(alpha=0.5)
+```
 
 **Answer**
 
-We can conclue from the above plot
+The boxplot in the above plot indicates that the two groups have significant difference in median times of, and the two groups also have different x value ranges. the Incongruent words group presenting much longer times than the congruent words group.
+
+**5.Now, perform the statistical test and report your results. What is your confidence level and your critical statistic value? Do you reject the null hypothesis or fail to reject it? Come to a conclusion in terms of the experiment task. Did the results match up with your expectations?**
