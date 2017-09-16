@@ -31,6 +31,9 @@ The independent variable is the congruency condition and incongruency condition 
 
 **Answer:**
 
+The hypothesis that can use is: the difference between the time used to identify the colors under congruent words condition and incongruent words condition, namely, the Stroop Effect is in existence.
+
+To be more specifically, here I will refer to the population means of congruence words group and incongruence words group - average times for the respective groups to recognize the colors. 
 
 **3. Report some descriptive statistics regarding this dataset. Include at least one measure of central tendency and at least one measure of variability.**
 
