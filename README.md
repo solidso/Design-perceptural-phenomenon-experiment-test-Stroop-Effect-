@@ -7,3 +7,5 @@ Some task will be completed in this project,
 - 2 How to use descriptive statistics to describe investgate qualities of a sample
 - 3 How to set up a hypothesis test, make inferences from a sample, and draw conclusions based on the results
  
+**Note**
+For easier to understand, please click on the 'perceptual_phenomenon_test_design.pdf' file
