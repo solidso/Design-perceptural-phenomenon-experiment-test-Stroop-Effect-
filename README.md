@@ -1,4 +1,5 @@
 # Design-perceptural-phenomenon-experiment-test-Stroop-Effect-
+## The inferential statistic
 In this project, I will investigate a classic phenomenon from experimental psychology called the Stroop Effect.
 I will learn more about the experiment, create a hypothesis regarding the outcome of the task, then go through the task. Besides, I will look at some data collected from others who have performed the same task and compute some statistics describing the results. 
 
