@@ -54,3 +54,14 @@ tidy.dat %>%
 ```
 
 
+**4. Provide one or two visualizations that show the distribution of the sample data. Write one or two sentences noting what you observe about the plot or plots.**
+
+```{r}
+library(ggplot2)
+b <- ggplot(tidy.dat, aes(y = time, x = congruency, fill = congruency))
+b + geom_boxplot(alpha=0.3)
+```
+
+**Answer**
+
+We can conclue from the above plot
